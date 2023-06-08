@@ -37,12 +37,13 @@ class AdminHandler(http.server.BaseHTTPRequestHandler):
         self.end_headers()
 
 def process_message(message):
+    # Print the accepted control message
     print("Accepted Control message about Text and Number: {}, Number: {}".format(
         message.text, message.number))
 
 
 if __name__ == "__main__":
-
+    # Set up the server
     server_address = ("", 3020)
     admin_handler = AdminHandler
 
@@ -50,8 +51,10 @@ if __name__ == "__main__":
     print("Server is started at http://localhost:"+str(server_address[1]))
 
     try:
+        # Start serving requests
         httpd.serve_forever()
     except KeyboardInterrupt:
         pass
 
+    # Shut down the server
     httpd.server_close()
