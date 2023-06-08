@@ -12,9 +12,9 @@ You can use with ease because you can build a server at localhost(127.0.0.1)🫶
 Because localhost can be seen by only you and is not public🤠
 
 ## About Port
-For beginners, it is used different port at any language, though.
-
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
+
+For beginners, it is used different port at any language, though.
 
 - Go: localhost:3010
 - Python: localhost:3020
