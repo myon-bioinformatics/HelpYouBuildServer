@@ -22,6 +22,8 @@ For beginners, it is used different port at any language, though.
 
 ### Golang, You begin learning it
 - go run main.go <- localhost:3010
+- curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 
 ### Python, You begin learning it
 - python main.py <- localhost:3020
+- curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
