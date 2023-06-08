@@ -6,7 +6,7 @@ After Download, you can build a server by Go, Python, or...(others: now preparin
 You can practice using curl command, or understand how to build a server, 
 or customize to your server whatever you ilke.
 
-## About Server and Client
+## 🐼About Server and Client
 > __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
 
 > __Note__  Because localhost can be seen by only you, and it is not public🤠
@@ -15,7 +15,7 @@ or customize to your server whatever you ilke.
 
 **GET: A server will memorize the requests, although a server won't response to Client**
 
-## About Port
+## 🐸About Port
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
 
 For beginners, it is used different port at any language, though.
