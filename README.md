@@ -40,13 +40,8 @@ curl localhost:3010/admin
 
 #### ②Standard Output Example in the side of Server
 > Server is started at http://localhost:3010
->
-> Accepted Control message about Text and Number: ニコニコ, Number: 2525. 
 > 
-> 127.0.0.1 - - [08/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200 
->
-> 127.0.0.1 - - [08/Jun/2023 04:32:05] "GET / HTTP/1.1" 501
-
+> Text: ニコニコ, Number: 2525
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
