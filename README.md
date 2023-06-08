@@ -20,8 +20,8 @@ For beginners, it is used different port at any language, though.
 - Python: localhost:3020
 - Others: Now preparing☕️
 
-### Golang, You begin learning 
+### Golang, You begin learning it
 - go run main.go <- localhost:3010
 
-### Python, You begin learning
+### Python, You begin learning it
 - python main.py <- localhost:3020
