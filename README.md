@@ -35,7 +35,6 @@ go run main.go
 ##### Another Terminal in the side of Client
 ```
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
-curl localhost:3010/admin
 ```
 
 #### ②Standard Output Example in the side of Server
