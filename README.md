@@ -26,8 +26,14 @@ For beginners, it is used different port at any language, though.
 
 ### 1) Golang, when you begin learning it　　<- localhost:3010　　　
 #### ①Command Example
+
+##### A Terminal in the side of Server
 ```
 go run main.go 
+```
+
+##### Another Terminal in the side of Client
+```
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 curl localhost:3010/admin
 ```
@@ -44,8 +50,14 @@ curl localhost:3010/admin
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
+
+##### A Terminal in the side of Server
 ```
 python main.py
+```
+
+##### Another Terminal in the side of Client
+```
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 curl localhost:3020/admin
 ```
