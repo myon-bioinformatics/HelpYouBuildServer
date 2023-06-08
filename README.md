@@ -20,10 +20,14 @@ For beginners, it is used different port at any language, though.
 - Python: localhost:3020
 - Others: Now preparing☕️
 
-### Golang, You begin learning it
-- go run main.go <- localhost:3010
-- curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
+### Golang, You begin learning it　<- localhost:3010　　　
+```
+go run main.go 
+curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
+```
 
-### Python, You begin learning it
-- python main.py <- localhost:3020
-- curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
+### Python, You begin learning it <- localhost:3020
+```
+python main.py
+curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
+```
