@@ -9,7 +9,7 @@ or customize to your server whatever you ilke.
 ## About Server and Client
 > __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
 
-> __Note__  Because localhost can be seen by only you and is not public🤠
+> __Note__  Because localhost can be seen by only you, and it is not public🤠
 
 **POST: A server will memorize, and response the message if you send correct request including the argments of 'text' and 'number'**
 
