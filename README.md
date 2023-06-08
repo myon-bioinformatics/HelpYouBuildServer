@@ -24,15 +24,15 @@ For beginners, it is used different port at any language, though.
 - Python -> localhost:3020
 - Others -> Now preparing☕️
 
-### Golang, you begin learning it　　<- localhost:3010　　　
-#### Command Example
+### 1) Golang, when you begin learning it　　<- localhost:3010　　　
+#### ①Command Example
 ```
 go run main.go 
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 curl localhost:3010/admin
 ```
 
-#### Standard Output Example in the side of Server
+#### ②Standard Output Example in the side of Server
 > Server is started at http://localhost:3010
 >
 > Accepted Control message about Text and Number: ニコニコ, Number: 2525. 
@@ -42,15 +42,15 @@ curl localhost:3010/admin
 > 127.0.0.1 - - [08/Jun/2023 04:32:05] "GET / HTTP/1.1" 501 -
 
 
-### Python, you begin learning it 　　<- localhost:3020
-#### Command Example
+### 2) Python, when you begin learning it 　　<- localhost:3020
+#### ①Command Example
 ```
 python main.py
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 curl localhost:3020/admin
 ```
 
-#### Standard Output Example in the side of Server
+#### ②Standard Output Example in the side of Server
 > Server is started at http://localhost:3020
 >
 > Accepted Control message about Text and Number: ニコニコ, Number: 2525. 
