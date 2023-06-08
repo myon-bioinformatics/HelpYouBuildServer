@@ -13,7 +13,7 @@ or customize to your server whatever you ilke.
 
 **POST: A server will memorize, and response the message if you send correct request including the argments of 'text' and 'number'**
 
-**GET: A server memorize the requests, although a server won't response to Client**
+**GET: A server will memorize the requests, although a server won't response to Client**
 
 ## About Port
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
