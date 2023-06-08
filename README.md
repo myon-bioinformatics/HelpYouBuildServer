@@ -20,9 +20,9 @@ or customize to your server whatever you ilke.
 
 For beginners, it is used different port at any language, though.
 
-- Go: localhost:3010
-- Python: localhost:3020
-- Others: Now preparing☕️
+- Go -> localhost:3010
+- Python -> localhost:3020
+- Others -> Now preparing☕️
 
 ### Golang, You begin learning it　　<- localhost:3010　　　
 ```
