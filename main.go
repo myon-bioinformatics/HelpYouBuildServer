@@ -110,6 +110,6 @@ func admin(cc chan ControlMessage, statusPollChannel chan chan bool) {
 
 // Worker processing
 func worker(msg ControlMessage, cc chan bool) {
-	fmt.Printf("Text: %s, Number: %d \n", msg.Text, msg.Number)
+	fmt.Printf("Accepted Control message, Text: %s, Number: %d \n", msg.Text, msg.Number)
 	cc <- false
 }
