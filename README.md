@@ -16,8 +16,8 @@ For beginners, it is used different port at any language, though.
 
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
 
-- Go: http://localhost:3010
-- Python: http://localhost:3020
+- Go: localhost:3010
+- Python: localhost:3020
 - Others: Now preparing☕️
 
 ### Golang, You begin learning 
