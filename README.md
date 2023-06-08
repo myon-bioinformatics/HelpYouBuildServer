@@ -6,10 +6,14 @@ After Download, you can build a server by Go, Python, or...(others: now preparin
 You can practice using curl command, or understand how to build a server, 
 or customize to your server whatever you ilke.
 
-## About Server
-You can use with ease because you can build a server at localhost(127.0.0.1)🫶
+## About Server and Client
+> __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
 
-Because localhost can be seen by only you and is not public🤠
+> __Note__  Because localhost can be seen by only you and is not public🤠
+
+**POST: A server will memorize, and response the message if you send correct request including the argments of 'text' and 'number'**
+
+**GET: A server memorize the requests, although a server won't response to Client**
 
 ## About Port
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
