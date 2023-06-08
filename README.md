@@ -24,7 +24,7 @@ For beginners, it is used different port at any language, though.
 - Python -> localhost:3020
 - Others -> Now preparing☕️
 
-### Golang, You begin learning it　　<- localhost:3010　　　
+### Golang, you begin learning it　　<- localhost:3010　　　
 ```
 go run main.go 
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
@@ -41,7 +41,7 @@ curl localhost:3010/admin
 > 127.0.0.1 - - [08/Jun/2023 20:21:05] "GET / HTTP/1.1" 501 -
 
 
-### Python, You begin learning it 　　<- localhost:3020
+### Python, you begin learning it 　　<- localhost:3020
 ```
 python main.py
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
