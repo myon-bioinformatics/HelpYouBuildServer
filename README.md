@@ -28,10 +28,31 @@ For beginners, it is used different port at any language, though.
 ```
 go run main.go 
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
+curl localhost:3010/admin
 ```
+
+#### Standard Output Example in the side of Server
+> Server is started at http://localhost:3010
+>
+> Accepted Control message about Text and Number: ニコニコ, Number: 2525. 
+> 
+> 127.0.0.1 - - [09/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200 - 
+>
+> 127.0.0.1 - - [08/Jun/2023 20:21:05] "GET / HTTP/1.1" 501 -
+
 
 ### Python, You begin learning it 　　<- localhost:3020
 ```
 python main.py
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
+curl localhost:3020/admin
 ```
+
+#### Standard Output Example in the side of Server
+> Server is started at http://localhost:3020
+>
+> Accepted Control message about Text and Number: ニコニコ, Number: 2525. 
+> 
+> 127.0.0.1 - - [09/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200 - 
+>
+> 127.0.0.1 - - [08/Jun/2023 20:21:05] "GET / HTTP/1.1" 501 -
