@@ -41,7 +41,7 @@ curl localhost:3010/admin
 #### ②Standard Output Example in the side of Server
 > Server is started at http://localhost:3010
 > 
-> Text: ニコニコ, Number: 2525
+> Accepted Control message, Text: ニコニコ, Number: 2525
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
