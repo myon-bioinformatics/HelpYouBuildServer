@@ -38,7 +38,7 @@ class AdminHandler(http.server.BaseHTTPRequestHandler):
 
 def process_message(message):
     # Print the accepted control message
-    print("Accepted Control message about Text and Number: {}, Number: {}".format(
+    print("Accepted Control message, Text: {}, Number: {}".format(
         message.text, message.number))
 
 
