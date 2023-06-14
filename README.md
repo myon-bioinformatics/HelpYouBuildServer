@@ -15,7 +15,7 @@ or customize to your server whatever you like.
 
 - **GET: A server will acknowledge the request, although a server won't response to Client**
 
-## 🐸About Port and how to use🐸
+## 🐸About Port, and Practice🐸
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
 > 
 > __Note__ 　　Wiki is updated occasionally for Beginners.
