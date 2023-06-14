@@ -78,8 +78,11 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 
 #### ②Standard Output Example in the side of Server
 > Server is started at http://localhost:3030
+> 
 > ✅ Granted all net access.
+> 
 > Listening on http://localhost:3030/
+> 
 > Accepted Control message, Text: ニコニコ, Number: 2525
 
 
