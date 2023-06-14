@@ -66,7 +66,7 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 > 
 > 127.0.0.1 - - [08/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200
 
-### 3) JavaScript(Deno), when you begin learning it　　<- localhost:3030　　　
+### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
 #### ①Command Example
 
 ##### A Terminal in the side of Server
