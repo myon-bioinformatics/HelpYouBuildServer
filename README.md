@@ -66,10 +66,12 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 #### ②Standard Output Example in the side of Server🎂
 > Server is started at http://localhost:3020
 >
-> Accepted Control message, Text: ニコニコ, Number: 2525. 
+> 127.0.0.1 - - [14/Jun/2023 20:52:09] "POST /admin HTTP/1.1" 200 -
 > 
-> 127.0.0.1 - - [08/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200
+> Accepted Control message: Text: ニコニコ, Number: 2525
 
+#### ③Standard Output Example in the side of Client🎸
+> OK, Accepted Control message: Text: ニコニコ, Number: 2525
 
 ### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
 
