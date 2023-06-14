@@ -15,7 +15,7 @@ or customize to your server whatever you ilke.
 
 - **GET: A server will acknowledge the request, although a server won't response to Client**
 
-## 🐸About Port
+## 🐸About Port and how to use
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
 
 For beginners, it is used different port at any language, though.
@@ -46,6 +46,7 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 #### ③Standard Output Example in the side of Client🎸
 > Sent Control message about Text and Numebr: ニコニコ, Number: 2525
 
+
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
 
@@ -65,6 +66,7 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 > Accepted Control message, Text: ニコニコ, Number: 2525. 
 > 
 > 127.0.0.1 - - [08/Jun/2023 04:31:33] "POST /admin HTTP/1.1" 200
+
 
 ### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
 #### ①Command Example
