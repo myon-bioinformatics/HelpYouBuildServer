@@ -44,7 +44,7 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 > Accepted Control message, Text: ニコニコ, Number: 2525
 
 #### ③Standard Output Example in the side of Client🎸
-> Sent Control message about Text and Numebr: ニコニコ, Number: 2525%     
+> Sent Control message about Text and Numebr: ニコニコ, Number: 2525
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
