@@ -62,4 +62,5 @@ def start_server():
     server = HTTPServer((host, port), RequestHandler)
     server.serve_forever()
 
-start_server()
+if __name__ == "__main__":
+    start_server()
