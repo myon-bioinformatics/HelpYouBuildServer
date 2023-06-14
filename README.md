@@ -2,7 +2,7 @@
 __*When beginners would like to build a server by any language, or use curl command, or understand them...*__
 
 ## Summary
-After Download, you can build a server by Go, Python, or...(others: now preparing).
+After Download, you can build a server by Go, Python, JavaScript(*Deno*) or...(others: now preparing).
 You can practice using curl command, or understand how to build a server, 
 or customize to your server whatever you ilke.
 
