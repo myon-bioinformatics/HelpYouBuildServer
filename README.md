@@ -11,9 +11,9 @@ or customize to your server whatever you ilke.
 
 > __Note__  Because localhost can be seen by only you, and it is not public🤠
 
-**POST: A server will acknowledge, and response the message if you send correct request including the argments of 'text' and 'number'**
+- **POST: A server will acknowledge, and response the message if you send correct request including the argments of 'text' and 'number'**
 
-**GET: A server will acknowledge the request, although a server won't response to Client**
+- **GET: A server will acknowledge the request, although a server won't response to Client**
 
 ## 🐸About Port
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
