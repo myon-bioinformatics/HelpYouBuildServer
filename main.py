@@ -1,60 +1,58 @@
-import http.server
-import urllib.parse
-from http import HTTPStatus
-
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import urlparse, parse_qs
+import json
 
 class ControlMessage:
     def __init__(self, text, number):
         self.text = text
         self.number = number
 
+    def __str__(self):
+        return f"Text: {self.text}, Number: {self.number}"
 
-class AdminHandler(http.server.BaseHTTPRequestHandler):
-    def do_POST(self):
-        parsed_path = urllib.parse.urlparse(self.path)
-        if parsed_path.path == "/admin":
-            self.handle_admin_post()
-        else:
-            self.send_error(HTTPStatus.NOT_FOUND, "Not Found")
-
-    def handle_admin_post(self):
-        content_length = int(self.headers.get("Content-Length", 0))
-        post_data = self.rfile.read(content_length).decode("utf-8")
-        parsed_data = urllib.parse.parse_qs(post_data)
-
-        text = parsed_data.get("text", [""])[0]
-        number = parsed_data.get("number", [None])[0]
-
-        if not text or not number.isdigit():
-            self.send_error(HTTPStatus.BAD_REQUEST, "Bad Request")
-            return
-
-        message = ControlMessage(text, number)
-        process_message(message)
-
-        self.send_response(HTTPStatus.OK)
+class RequestHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
+        self.wfile.write(bytes("OK: It's a GET method or URL not in \"/admin\"", "utf-8"))
+
+    def do_POST(self):
+        if self.path.startswith("/admin"):
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            params = parse_qs(body)
+            text = params.get("text", [None])[0]
+            number = params.get("number", [None])[0]
+
+            if text is None or number is None or not number.isdigit():
+                self.send_response(400)
+                self.send_header("Content-type", "text/plain")
+                self.end_headers()
+                self.wfile.write(bytes("Bad Request", "utf-8"))
+                return
+
+            message = ControlMessage(text, int(number))
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            self.wfile.write(bytes(f"OK, Accepted Control message: {message}", "utf-8"))
+            process_message(message)
+        else:
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            self.wfile.write(bytes("OK: It's a GET method or URL not in \"/admin\"", "utf-8"))
 
 def process_message(message):
-    # Print the accepted control message
-    print("Accepted Control message, Text: {}, Number: {}".format(
-        message.text, message.number))
+    print(f"Accepted Control message: {message}")
 
+def start_server():
+    host = "localhost"
+    port = 3020
+    print(f"Server is started at http://{host}:{port}")
 
-if __name__ == "__main__":
-    # Set up the server
-    server_address = ("", 3020)
-    admin_handler = AdminHandler
+    server = HTTPServer((host, port), RequestHandler)
+    server.serve_forever()
 
-    httpd = http.server.HTTPServer(server_address, admin_handler)
-    print("Server is started at http://localhost:"+str(server_address[1]))
-
-    try:
-        # Start serving requests
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        pass
-
-    # Shut down the server
-    httpd.server_close()
+start_server()
