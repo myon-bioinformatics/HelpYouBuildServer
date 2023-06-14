@@ -29,6 +29,9 @@ For Beginners, it is used different port at any language, though.
 - [ ] Others -> Now preparing☕️
 
 ### 1) Golang, when you begin learning it　　<- localhost:3010　　　
+#### ⓪Confirm Version
+> go version go1.20.4 darwin/arm64 when I confirmed by using ```go version```
+
 #### ①Command Example
 
 ##### A Terminal in the side of Server
@@ -51,6 +54,11 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
+#### ⓪Confirm Version
+> Python 3.11.3 when I confirmed by using ```python --version```
+> 
+> __Note__ startswith() can be used since Python 3.9
+
 #### ①Command Example
 
 ##### A Terminal in the side of Server
@@ -76,6 +84,9 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 ### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
 
 > Reference: *https://deno.land/std@0.191.0/http/server.ts?s=serve* 
+
+#### ⓪Confirm Version
+> v8 11.5.150.2, typescript 5.0.4 when I confirmed by using ```deno --version```
 
 #### ①Command Example
 
@@ -103,7 +114,10 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 
 
 ### 4) Ruby, when you begin learning it　　<- localhost:3040　　　
+#### ⓪Confirm Version
 
+> ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22] when I confirmed by using ```ruby -v```
+> 
 >__Note__ you must comand```gem install webrick``` if you don't install it
 
 #### ①Command Example
