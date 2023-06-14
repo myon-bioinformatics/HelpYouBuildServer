@@ -83,7 +83,7 @@ func admin(cc chan ControlMessage, statusPollChannel chan chan bool) {
 		cc <- msg
 
 		// Create response
-		fmt.Fprintf(w,"Sent Control message about Text and Numebr: %s, Number: %d",
+		fmt.Fprintf(w,"Sent Control message about Text and Number: %s, Number: %d",
 			html.EscapeString(r.FormValue("text")),
 			number,
 		)
