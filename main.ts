@@ -25,7 +25,7 @@ async function handleRequest(request: Request): Promise<Response> {
   const text = params.get("text");
   const number = Number(params.get("number"));
 
-  if (!text || isNaN(number)) {
+  if (request.url.indexOf("/admin") > -1 && !text || isNaN(number)) {
     // Invalid request: missing text or number
     return new Response(`Bad Request`, { status: 400 });
   }
@@ -37,8 +37,8 @@ async function handleRequest(request: Request): Promise<Response> {
     return new Response(`OK, Accepted Control message, Text: ${text}, Number: ${number}`, { status: 200 });
   }
 
-  // Requested route not found
-  return new Response(`Not Found`, { status: 404 });
+  // Requested GET or something
+  return new Response(`OK: It's a GET method or url not in"/admin"`, { status: 200 });
 }
 
 serve((_req) => handleRequest(_req), { port, hostname });
