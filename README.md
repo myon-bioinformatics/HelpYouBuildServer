@@ -4,7 +4,7 @@ __*🚴‍♀️When beginners would like to build a server by any language, or 
 ## 🦊Summary🦊
 After Download, you can build a server by Go, Python, JavaScript(*Deno*) or...(others: now preparing).
 You can practice using curl command, or understand how to build a server, 
-or customize to your server whatever you ilke.
+or customize to your server whatever you lke.
 
 ## 🐼About Server and Client🐼
 > __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
@@ -71,6 +71,9 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 
 
 ### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
+
+> Reference: *https://deno.land/std@0.191.0/http/server.ts?s=serve* 
+
 #### ①Command Example
 
 ##### A Terminal in the side of Server
@@ -94,5 +97,4 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 
 #### ③Standard Output Example in the side of Client🎸
 > OK, Accepted Control message, Text: ニコニコ, Number: 2525
-
 
