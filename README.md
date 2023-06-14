@@ -38,10 +38,13 @@ go run main.go
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3010/admin
 ```
 
-#### ②Standard Output Example in the side of Server
+#### ②Standard Output Example in the side of Server🎂
 > Server is started at http://localhost:3010
 > 
 > Accepted Control message, Text: ニコニコ, Number: 2525
+
+#### ③Standard Output Example in the side of Client🎸
+> Sent Control message about Text and Numebr: ニコニコ, Number: 2525%     
 
 ### 2) Python, when you begin learning it 　　<- localhost:3020
 #### ①Command Example
@@ -56,7 +59,7 @@ python main.py
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 ```
 
-#### ②Standard Output Example in the side of Server
+#### ②Standard Output Example in the side of Server🎂
 > Server is started at http://localhost:3020
 >
 > Accepted Control message, Text: ニコニコ, Number: 2525. 
@@ -76,7 +79,7 @@ deno run main.ts
 curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 ```
 
-#### ②Standard Output Example in the side of Server
+#### ②Standard Output Example in the side of Server🎂
 > Server is started at http://localhost:3030
 > 
 > ✅ Granted all net access.
@@ -84,5 +87,8 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 > Listening on http://localhost:3030/
 > 
 > Accepted Control message, Text: ニコニコ, Number: 2525
+
+#### ③Standard Output Example in the side of Client🎸
+> OK, Accepted Control message, Text: ニコニコ, Number: 2525
 
 
