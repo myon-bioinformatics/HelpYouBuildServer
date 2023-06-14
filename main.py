@@ -25,7 +25,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             text = params.get("text", [None])[0]
             number = params.get("number", [None])[0]
 
-            if text is None or number is None or not number.isdigit():
+            if text is None or not number.isdigit():
                 self.send_response(400)
                 self.send_header("Content-type", "text/plain")
                 self.end_headers()
