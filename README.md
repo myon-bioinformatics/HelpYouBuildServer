@@ -2,9 +2,9 @@
 __*🚴‍♀️When beginners would like to build a server by any language, or use curl command, or understand them...🚴‍♂️*__
 
 ## 🦊Summary🦊
-After Download, you can build a server by Go, Python, JavaScript(*Deno*) or...(others: now preparing).
+After Download, you can build a server by Go, Python, JavaScript(*Deno*), Ruby, or...(others: now preparing).
 You can practice using curl command, or understand how to build a server, 
-or customize to your server whatever you lke.
+or customize to your server whatever you like.
 
 ## 🐼About Server and Client🐼
 > __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
@@ -25,6 +25,7 @@ For Beginners, it is used different port at any language, though.
 - [x] Go -> localhost:3010
 - [x] Python -> localhost:3020
 - [x] JavaScript(*Deno*) -> localhost:3030
+- [x] Ruby  -> localhost:3040
 - [ ] Others -> Now preparing☕️
 
 ### 1) Golang, when you begin learning it　　<- localhost:3010　　　
@@ -94,6 +95,39 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3030/admin
 > Listening on http://localhost:3030/
 > 
 > Accepted Control message, Text: ニコニコ, Number: 2525
+
+#### ③Standard Output Example in the side of Client🎸
+> OK, Accepted Control message, Text: ニコニコ, Number: 2525
+
+
+### 4) Ruby, when you begin learning it　　<- localhost:3040　　　
+
+>__Note__ you must comand```gem install webrick``` if you don't install it
+
+#### ①Command Example
+
+##### A Terminal in the side of Server
+```
+ruby main.rb
+```
+
+##### Another Terminal in the side of Client
+```
+curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3040/admin
+```
+
+#### ②Standard Output Example in the side of Server🎂
+> Server is started at http://localhost:3040
+>
+> [2023-06-14 20:32:56] INFO  WEBrick 1.8.1
+>
+> [2023-06-14 20:32:56] INFO  ruby 3.2.2 (2023-03-30) [arm64-darwin22]
+>
+> [2023-06-14 20:32:56] INFO  WEBrick::HTTPServer#start: pid=41089 port=3040
+>
+> Accepted Control message, Text: ニコニコ, Number: 2525
+>
+> 127.0.0.1 - - [14/Jun/2023:20:32:59 JST] "POST /admin HTTP/1.1" 200 62
 
 #### ③Standard Output Example in the side of Client🎸
 > OK, Accepted Control message, Text: ニコニコ, Number: 2525
