@@ -7,18 +7,18 @@ You can practice using curl command, or understand how to build a server,
 or customize to your server whatever you like.
 
 ## 🐼About Server and Client🐼
-> __Note__  You can use with ease because you can build a server at localhost(127.0.0.1)🫶
-
-> __Note__  Because localhost can be seen by only you, and it is not public🤠
+> __Note__ You can use with ease because you can build a server at localhost(127.0.0.1)🫶
+> 
+> __Note__ Because localhost can be seen by only you, and it is not public🤠
 
 - **POST: A server will acknowledge, and response the message if you send correct request including the argments of 'text' and 'number'**
 
 - **GET: A server will acknowledge the request, although a server won't response to Client**
 
 ## 🐸About Port, and Practice🐸
-> __Note__  Actually, it's no relations, and it's no problem you change the number of port.
-
-> __Note__ 　　Wiki is updated occasionally for Beginners.
+> __Note__ Actually, it's no relations, and it's no problem you change the number of port.
+> 
+> __Note__ Wiki is updated occasionally for Beginners.
 
 For Beginners, it is used different port at any language, though.
 
