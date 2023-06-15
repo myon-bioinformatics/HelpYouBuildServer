@@ -17,7 +17,7 @@ or customize to your server whatever you like.
 
 ## 🐸About Port, and Practice🐸
 > __Note__  Actually, it's no relations, and it's no problem you change the number of port.
-> 
+
 > __Note__ 　　Wiki is updated occasionally for Beginners.
 
 For Beginners, it is used different port at any language, though.
