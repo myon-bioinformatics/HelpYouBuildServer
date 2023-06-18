@@ -83,7 +83,7 @@ curl -X POST -d 'text=ニコニコ' -d 'number=2525' localhost:3020/admin
 
 ### 3) JavaScript(*Deno*), when you begin learning it　　<- localhost:3030　　　
 
-> Reference: *https://deno.land/std@0.191.0/http/server.ts?s=serve* 
+> Reference: *https://deno.land/std@0.192.0/http/server.ts* 
 
 #### ⓪Confirm Version
 > *v8 11.5.150.2, typescript 5.0.4* when I confirmed by using ```deno --version```
