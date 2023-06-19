@@ -1,6 +1,13 @@
 # 🥳<Help~　You~　Build~　Server~
 __*🚴‍♀️When Beginners would like to build a server by any language, or use curl command, or understand...🚴‍♂️*__
 
+![GitHub license](https://img.shields.io/github/license/myon-bioinformatics/HelpYouBuildServer)
+![GitHub last commit](https://img.shields.io/github/last-commit/myon-bioinformatics/HelpYouBuildServer)
+
+[![GitHub followers](https://img.shields.io/github/followers/myon-bioinformatics?style=social)](https://github.com/myon-bioinformatics)
+[![Reddit User Karma](https://img.shields.io/reddit/user-karma/combined/myon_reddit?style=social)](https://www.reddit.com/user/myon_reddit/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/myonitbusiness?style=social)](https://twitter.com/myonitbusiness)
+
 ## 🦊Summary🦊
 After Download, you can build a server by Go, Python, JavaScript(*Deno*), Ruby, or...(others: now preparing).
 
