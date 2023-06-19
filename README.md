@@ -1,5 +1,5 @@
 # 🥳<Help~　You~　Build~　Server~
-__*🚴‍♀️When beginners would like to build a server by any language, or use curl command, or understand them...🚴‍♂️*__
+__*🚴‍♀️When Beginners would like to build a server by any language, or use curl command, or understand...🚴‍♂️*__
 
 ## 🦊Summary🦊
 After Download, you can build a server by Go, Python, JavaScript(*Deno*), Ruby, or...(others: now preparing).
