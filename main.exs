@@ -67,11 +67,44 @@ defmodule Server do
     end
   end
 
+  def recv_all(socket, acc) do
+    case :gen_tcp.recv(socket, 0, 5000) do
+      {:ok, data} ->
+        acc2 = acc <> to_string(data)
+        # Check if we have received the full request
+        case String.split(acc2, "\r\n\r\n", parts: 2) do
+          [_headers, body] ->
+            # Extract Content-Length and verify we have enough body bytes
+            content_length =
+              acc2
+              |> String.downcase()
+              |> String.split("\r\n")
+              |> Enum.find_value(0, fn line ->
+                if String.starts_with?(line, "content-length:") do
+                  line |> String.split(":") |> List.last() |> String.trim() |> String.to_integer()
+                end
+              end)
+
+            if byte_size(body) >= content_length do
+              acc2
+            else
+              recv_all(socket, acc2)
+            end
+
+          [_] ->
+            recv_all(socket, acc2)
+        end
+
+      {:error, _} ->
+        acc
+    end
+  end
+
   def accept_loop(listen_socket) do
     {:ok, socket} = :gen_tcp.accept(listen_socket)
     spawn(fn ->
-      {:ok, data} = :gen_tcp.recv(socket, 0)
-      handle_request(socket, to_string(data))
+      data = recv_all(socket, "")
+      handle_request(socket, data)
     end)
     accept_loop(listen_socket)
   end

@@ -45,7 +45,10 @@ fn urlencoding_decode(s: &str) -> String {
                 let h1 = chars.next().and_then(|c| c.to_digit(16));
                 let h2 = chars.next().and_then(|c| c.to_digit(16));
                 if let (Some(a), Some(b)) = (h1, h2) {
-                    out.push(char::from_u32(a * 16 + b).unwrap_or(c));
+                    if let Some(decoded) = char::from_u32(a * 16 + b) {
+                        out.push(decoded);
+                    }
+                    // Skip invalid percent-encoded sequences silently
                 }
             }
             _ => out.push(c),
@@ -97,7 +100,12 @@ fn handle_client(mut stream: TcpStream) {
         }
     }
 
-    // Read body
+    // Read body (cap at 1 MB to prevent large allocation attacks)
+    const MAX_BODY: usize = 1024 * 1024;
+    if content_length > MAX_BODY {
+        send_response(&mut stream, 400, "Bad Request: body too large");
+        return;
+    }
     let mut body = vec![0u8; content_length];
     if content_length > 0 {
         use std::io::Read;
